@@ -15,6 +15,12 @@ body {
     {
         display: none;
     }
+    
+    .newupload 
+    {
+    width: 70%;
+    }
+
 }
 
 /*header*/
@@ -227,22 +233,36 @@ body {
     text-align: center;
 }
 
+.bodytext {
+    padding: 90px;
+}
+
 .bodytext h1{
     font-family: 'Roboto Condensed', sans-serif;
     font-size: 25px;
-    margin-top: 20px;
-    padding: 20px;
+    padding: 10px;
+    font-weight: bold;
 }
 
 .bodytext p{
     font-family: 'Merriweather', serif;
     font-size: 18px;
-    margin-top: 20px;
     line-height: 35px;
-    padding: 20px;
+    padding: 10px;
 }
 
 /*Store*/
+
+#storeheader h1{
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 80px;
+    text-align: center;
+}
+
+#signin {
+    text-align: right;
+    padding-right: 50px;
+}
 
 .storebody h1{
     font-family: 'Roboto Condensed', sans-serif;
@@ -255,3 +275,100 @@ body {
     line-height: 35px;
 }
 
+.input-group {
+    width: 25%;
+}
+
+.quantity {
+    width: 11%;
+}
+
+.moneyamount {
+    width: 10%;
+}
+
+/*contact*/
+
+#formheader h1{
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 80px;
+    text-align: center;
+    padding-bottom: 30px;
+}
+
+#formcontact h1{
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 40px;
+    text-align: center;
+}
+
+.formsubmit{
+    margin-top: 30px;
+}
+
+.form-group label{
+    font-family: 'Merriweather', serif;
+    font-size: 20px;
+}
+
+.contactfirst, .contactsecond label{
+    font-family: 'Merriweather', serif;
+    font-size: 20px;   
+}
+
+.contactfirst, .contactsecond, .filloutform {
+    width: 65%;
+}
+
+.googlemaps{
+    text-align: center;
+    padding-bottom: 30px;
+}
+
+/*registration*/
+
+.formstext h1{
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 25px;
+    line-height: 35px;
+    text-align: center;
+    padding: 20px
+}
+
+.discountheader h1{
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 45px;
+    line-height: 35px;
+    text-align: center;
+    padding: 20px
+}
+
+.discountheader p{
+    font-family: 'Merriweather', serif;
+    font-size: 18px;
+    line-height: 35px;
+    padding-left: 90px;
+    padding-right: 90px;
+}
+
+#formbutton {
+    padding:10px;
+}
+
+.newstudentform{
+    padding-left: 90px;
+    padding-right: 90px;
+    padding-bottom: 40px;
+}
+
+.newstudentform h1{
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 45px;
+    line-height: 50px;
+    text-align: center;
+    padding: 20px;
+}
+
+.newupload {
+    width: 20%;
+}

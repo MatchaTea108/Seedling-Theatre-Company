@@ -22,7 +22,7 @@
 </head>
     
 <body>
-    <div class="container-fluid">
+    <div class="content container-fluid">
        <div style="background-color:whitesmoke;">
 
         <div class="header d-flex justify-content-center align-items-center">
@@ -63,7 +63,7 @@
         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
           <a class="dropdown-item" href="#">Summer Classes</a>
           <a class="dropdown-item" href="#">Showcase Cast</a>
-          <a class="dropdown-item" href="#">New Student Forms</a>
+          <a class="dropdown-item" href="registration.html">New Student Forms</a>
           <a class="dropdown-item" href="#">Payment And Attendance Policy</a>
           <a class="dropdown-item" href="#">Code Of Conduct</a>
         </div>
@@ -87,32 +87,38 @@
     <div class="d-flex flex-column p-5"> 
       <div class="row justify-content-around">
        <div class="align-self-center col-lg-3">
-        <img src="/images/classes.png" class="img-fluid w-100 " alt="classstore">  
+        <img src="images/classes.png" class="img-fluid w-100 " alt="classstore">  
       </div>
       <div class="storebody col-xl-8">
           <h1>Classes</h1>
           <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
           </p>
-             <div class="dropdown">
-              <button class="btn-lg btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-expanded="false">
-                 Classes
-              </button>
-              <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                <a class="dropdown-item" href="#">Wizard Of Oz</a>
-                <a class="dropdown-item" href="#">Wizard Of Oz Camp</a>
-                <a class="dropdown-item" href="#">Summer Camp Class</a>
-                <a class="dropdown-item" href="#">Vocal Class</a>
-              </div>
-            </div>
+          
+        <div class="input-group mb-3">
+          <div class="input-group-prepend">
+          </div>
+          <select class="custom-select" id="classesdropdown">
+            <option selected>Classes...</option>
+            <option value="1">Wizard Of Oz $80</option>
+            <option value="2">Princess Party $80</option>
+            <option value="3">Little Woman $80</option>
+          </select>
+        </div>
              
-              <div class="input-group input-group-lg w-25 pt-3 pb-3">
-              <div class="input-group-prepend">
-                <span class="input-group-text" id="inputGroup-sizing-lg">Quantity:</span>
-              </div>
-              <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-lg">
-            </div>
+        <div class="input-group mb-3">
+          <div class="input-group-prepend">
+          </div>
+          <select class="custom-select" id="timesdropdown">
+            <option selected>Times...</option>
+            <option value="1">10:30 AM</option>
+            <option value="2">12:00 PM</option>
+            <option value="3">2:00 PM</option>
+            <option value="3">4:00 PM</option>
+            <option value="3">5:00 PM</option>
+          </select>
+        </div>
             
-            <div class="input-group input-group-lg w-75 pb-3">
+            <div class="input-group w-50 pb-3">
                   <div class="input-group-prepend">
                     <span class="input-group-text">Student's First and last name</span>
                   </div>
@@ -127,7 +133,7 @@
  </div>
 
     
-        <div class="d-flex justify-content-between" style="background-color:#306844"> 
+        <div class="footer d-flex justify-content-between" style="background-color:#306844"> 
             <div class="p-3">
                 <div id="footerleft"> <p>980 American Pacific Dr #103 <br> Henderson, NV 89014 <br> Kris Blake --  Owner /Director -- <br> 702-286-7242</p>
                 </div>   

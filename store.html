@@ -22,7 +22,7 @@
 </head>
     
 <body>
-    <div class="container-fluid">
+    <div class="content container-fluid">
        <div style="background-color:whitesmoke;">
 
         <div class="header d-flex justify-content-center align-items-center">
@@ -63,7 +63,7 @@
         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
           <a class="dropdown-item" href="#">Summer Classes</a>
           <a class="dropdown-item" href="#">Showcase Cast</a>
-          <a class="dropdown-item" href="#">New Student Forms</a>
+          <a class="dropdown-item" href="registration.html">New Student Forms</a>
           <a class="dropdown-item" href="#">Payment And Attendance Policy</a>
           <a class="dropdown-item" href="#">Code Of Conduct</a>
         </div>
@@ -83,6 +83,50 @@
     </ul>
   </div>
 </nav>
+   
+                       <!-- Button trigger modal -->
+            <div id="signin">
+            <button type="button" class="btn btn-success" data-toggle="modal" data-target="#exampleModal">
+              Sign Up
+            </button>
+            </div>
+
+            <!-- Modal -->
+            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Sign In</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+                  <div class="modal-body">
+                    <form>
+                      <div class="form-group">
+                        <label for="exampleInputEmail1">Email address</label>
+                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                      </div>
+                      <div class="form-group">
+                        <label for="exampleInputPassword1">Password</label>
+                        <input type="password" class="form-control" id="exampleInputPassword1">
+                      </div>
+                      <button type="submit" class="btn btn-success">Submit</button>
+                    </form>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-success">Forgot Password?</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+    
+            <div id="storeheader">
+                <h1>Seedling Store</h1>
+                </div>
+    
+
     
     <div class="d-flex flex-column p-5">
            <div class="row justify-content-around">
@@ -130,7 +174,7 @@
         </div>
     </div>
     
-        <div class="d-flex justify-content-between" style="background-color:#306844"> 
+        <div class="footer d-flex justify-content-between" style="background-color:#306844"> 
             <div class="p-3">
                 <div id="footerleft"> <p>980 American Pacific Dr #103 <br> Henderson, NV 89014 <br> Kris Blake --  Owner /Director -- <br> 702-286-7242</p>
                 </div>   

@@ -22,7 +22,7 @@
 </head>
     
 <body>
-    <div class="container-fluid">
+    <div class="content container-fluid">
        <div style="background-color:whitesmoke;">
 
         <div class="header d-flex justify-content-center align-items-center">
@@ -87,25 +87,27 @@
     <div class="d-flex flex-column p-5"> 
       <div class="row justify-content-around">
        <div class="align-self-center col-lg-3">
-        <img src="/images/digital%20recordings.png" class="img-fluid w-100 " alt="classstore">  
+        <img src="images/digital%20recordings.png" class="img-fluid w-100 " alt="classstore">  
       </div>
       <div class="storebody col-xl-8">
           <h1>Digital Show Recordings</h1>
           <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
           </p>
-             <div class="dropdown">
-              <button class="btn-lg btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-expanded="false">
-                 Past Show Recordings
-              </button>
-              <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                <a class="dropdown-item" href="#">Wizard Of Oz $15</a>
-                <a class="dropdown-item" href="#">Seussical The Musical $15</a>
-                <a class="dropdown-item" href="#">Lion King $15</a>
-                <a class="dropdown-item" href="#">Frozen $15</a>
-              </div>
-            </div>
+            
+        <div class="input-group mb-3">
+          <div class="input-group-prepend">
+          </div>
+          <select class="custom-select" id="showsdropdown">
+            <option selected>Shows...</option>
+            <option value="1">Wizard Of Oz $15</option>
+            <option value="2">Seussical The Musical $15</option>
+            <option value="3">Little Mermaid $15</option>
+            <option value="3">Mulan $15</option>
+            <option value="3">Frozen $15</option>
+          </select>
+        </div>
              
-              <div class="input-group input-group-lg w-25 pt-3 pb-3">
+              <div class="quantity input-group pb-3">
               <div class="input-group-prepend">
                 <span class="input-group-text" id="inputGroup-sizing-lg">Quantity:</span>
               </div>
@@ -119,7 +121,7 @@
  </div>
 
     
-        <div class="d-flex justify-content-between" style="background-color:#306844"> 
+        <div class="footer d-flex justify-content-between" style="background-color:#306844"> 
             <div class="p-3">
                 <div id="footerleft"> <p>980 American Pacific Dr #103 <br> Henderson, NV 89014 <br> Kris Blake --  Owner /Director -- <br> 702-286-7242</p>
                 </div>   

@@ -85,57 +85,98 @@
 </nav>
 
         <div id="formheader">
-            <h1>Contact Us</h1>
+            <h1>New Student Forms</h1>
         </div>
-
-        <div id="formcontact">
-            <h1>980 American Pacific Dr #103 <br> Henderson, NV 89014 <br> Kris Blake --  Owner /Director -- <br> 702-286-7242</h1>
-        </div>
-
-        <div class="contactfirst container-fluid justify-content-center align-items-center p-3">    
-           <form>
-          <div class="row">
-            <div class="col">
-             <label for="filloutform">Enter First Name</label>
-              <input type="text" class="form-control form-control-lg" placeholder="First name">
-            </div>
-            <div class="col">
-             <label for="filloutform">Enter Last Name</label>
-              <input type="text" class="form-control form-control-lg" placeholder="Last name">
-            </div>
-          </div>
-        </form>
-        </div>
- 
+          
+          <div class="formstext">
+              <h1>Please carefully read the documents below and review them with your child.</h1>
+           </div>
+          
+           <div class="registerbtn1 d-flex flex-column">
+             <div class="row justify-content-center p-3">
+               <div id="formbutton">
+                <a href="https://www.seedlingtheatrecompany.com/_files/ugd/335dda_228c1c42018d407c96bab7757776aebb.pdf"><button type="button" class="registerbtn btn-success btn-lg">Seedling Code Of Conduct</button></a>
+                </div>
+                <div id="formbutton">
+                <a href="https://www.seedlingtheatrecompany.com/_files/ugd/335dda_5936d3e66791493abab88131898b1dc0.pdf"><button type="button" class="registerbtn btn-success btn-lg">Safety Policy</button></a>
+                </div>
+                <div id="formbutton">
+                <a href="https://www.seedlingtheatrecompany.com/_files/ugd/335dda_73365c39150a48229c5461cb11130b3f.pdf"><button type="button" class="registerbtn btn-success btn-lg">Attendance & Payment Policies</button></a>
+                </div>
+                
+               </div>
+           </div>
            
-        <div class="contactsecond container-fluid justify-content-center align-items-center p-3">            
+           <div class="formstext">
+              <h1>Documents below need to be signed digitally, completed, and uploaded to the Seedling website before classes start. Hard copies are available at the studio if needed.</h1>
+           </div>
+           
+          <div class="registerbtn2 d-flex flex-column">
+             <div class="row justify-content-center p-3">
+                <div id="formbutton">
+                <a href="#"><button type="button" class="registerbtn btn-success btn-lg">Emergency Info & Permissions</button></a>
+                </div>
+                <div id="formbutton">
+                <a href="#"><button type="button" class="registerbtn btn-success btn-lg">Liability Waiver</button></a>
+                </div>
+               </div>
+           </div>
+           
+           <div class="discountheader">
+              <h1>Semester Sibling Discount</h1>
+              <p>Families who enroll more than one child in semester monthly tuition-based classes concurrently at our studio receive a 15% discount on all tuition payments . Sibling discount does not apply to production fees and does not apply if another discount offer is already being used. Use coupon code FAMILY15 when checking out online. Semester Sibling discount does not apply to Summer Camps.</p>
+           </div>
+
+          
+          <div class="newstudentform">
+          <h1>New Student Form</h1>                  
            <form>
-          <div class="row">
-            <div class="col">
-             <label for="filloutform">Enter Email Address</label>
-              <input type="text" class="form-control form-control-lg" placeholder="Email Address">
-            </div>
-            <div class="col">
-             <label for="filloutform">Enter Phone Number</label>
-              <input type="text" class="form-control form-control-lg" placeholder="Phone Number">
-            </div>
-          </div>
-        </form>
-        </div>
-
-       <form>
-         <div class="filloutform form-group container-fluid p-3">
-            <label for="filloutform">Enter question or comment here</label>
-            <textarea class="form-control" id="filloutform" rows="10"></textarea>
-            <div class="submitform text-center">
-            <button type="button" class="formsubmit btn-lg btn-success">Submit</button>
-            </div>
-        </div>
-        </form>
-
-    <div class="googlemaps container-fluid">
-    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3226.0980620706005!2d-115.02915088429626!3d36.04231258011169!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80c8d1176a08afd5%3A0xadf07f3ea208f14b!2sSeedling%20Theatre%20Company!5e0!3m2!1sen!2sus!4v1650357487186!5m2!1sen!2sus" width="60%" height="500" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-</div>
+              <div class="form-row">
+                <div class="form-group col-md-6">
+                  <label for="inputEmail4">New Student's First Name</label>
+                  <input type="email" class="firstname form-control" id="inputEmail4">
+                </div>
+                <div class="form-group col-md-6">
+                  <label for="inputPassword4">New Student's Last Name</label>
+                  <input type="password" class="lastname form-control" id="inputPassword4">
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="inputAddress">Address</label>
+                <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
+              </div>
+              <div class="form-group">
+                <label for="inputAddress2">Address 2</label>
+                <input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor">
+              </div>
+              <div class="form-row">
+                <div class="form-group col-md-6">
+                  <label for="inputCity">City</label>
+                  <input type="text" class="form-control" id="inputCity">
+                </div>
+                <div class="form-group col-md-4">
+                  <label for="inputState">State</label>
+                  <select id="inputState" class="form-control">
+                    <option selected>Choose...</option>
+                    <option>...</option>
+                  </select>
+                </div>
+                <div class="form-group col-md-2">
+                  <label for="inputZip">Zip</label>
+                  <input type="text" class="form-control" id="inputZip">
+                </div>
+              </div>
+               
+                <div class="newupload input-group mb-3">
+                  <div class="custom-file">
+                    <input type="file" class="custom-file-input" id="inputGroupFile03" aria-describedby="inputGroupFileAddon03">
+                    <label class="custom-file-label" for="inputGroupFile03">Upload Files Here</label>
+                  </div>
+                </div>
+                
+              <button type="submit" class="newformbtn btn-success btn-lg">Submit</button>
+            </form>
+            </div>  
     
         <div class="footer d-flex justify-content-between" style="background-color:#306844"> 
             <div class="p-3">

@@ -22,7 +22,7 @@
 </head>
     
 <body>
-    <div class="container-fluid">
+    <div class="content container-fluid">
        <div style="background-color:whitesmoke;">
 
         <div class="header d-flex justify-content-center align-items-center">
@@ -63,7 +63,7 @@
         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
           <a class="dropdown-item" href="#">Summer Classes</a>
           <a class="dropdown-item" href="#">Showcase Cast</a>
-          <a class="dropdown-item" href="#">New Student Forms</a>
+          <a class="dropdown-item" href="registration.html">New Student Forms</a>
           <a class="dropdown-item" href="#">Payment And Attendance Policy</a>
           <a class="dropdown-item" href="#">Code Of Conduct</a>
         </div>
@@ -87,47 +87,49 @@
     <div class="d-flex flex-column p-5"> 
       <div class="row justify-content-around">
        <div class="align-self-center col-lg-3">
-        <img src="/images/privately%20funded.png" class="img-fluid w-100 " alt="classstore">  
+        <img src="images/privately%20funded.png" class="img-fluid w-100 " alt="classstore">  
       </div>
       <div class="storebody col-xl-8">
           <h1>Privately Funded Items</h1>
           <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
           </p>
-             <div class="dropdown">
-              <button class="btn-lg btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-expanded="false">
-                 Partial Payment For The Month Of:
-              </button>
-              <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                <a class="dropdown-item" href="#">January</a>
-                <a class="dropdown-item" href="#">February</a>
-                <a class="dropdown-item" href="#">March</a>
-                <a class="dropdown-item" href="#">April</a>
-                <a class="dropdown-item" href="#">May</a>
-                <a class="dropdown-item" href="#">June</a>
-                <a class="dropdown-item" href="#">July</a>
-                <a class="dropdown-item" href="#">August</a>
-                <a class="dropdown-item" href="#">September</a>
-                <a class="dropdown-item" href="#">October</a>
-                <a class="dropdown-item" href="#">November</a>
-                <a class="dropdown-item" href="#">December</a>
-              </div>
-            </div>
-             
-              <div class="input-group input-group-lg w-25 pt-3 pb-3">
-              <div class="input-group-prepend">
-                <span class="input-group-text" id="inputGroup-sizing-lg">Payment Amount</span>
-              </div>
-              <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-lg">
-            </div>
             
-            <div class="input-group input-group-lg w-75 pb-3">
+        <div class="input-group mb-3">
+          <div class="input-group-prepend">
+          </div>
+          <select class="custom-select" id="monthdropdown">
+            <option selected>Partial Payment For The Month Of:</option>
+            <option value="1">January</option>
+            <option value="2">February</option>
+            <option value="3">March</option>
+            <option value="1">April</option>
+            <option value="2">May</option>
+            <option value="3">June</option>
+            <option value="1">May</option>
+            <option value="2">June</option>
+            <option value="3">July</option>
+            <option value="1">August</option>
+            <option value="2">September</option>
+            <option value="3">October</option>
+            <option value="1">November</option>
+            <option value="2">December</option>
+          </select>
+        </div>
+             
+             <div class="moneyamount input-group mb-3">
+                  <div class="input-group-prepend">
+                    <span class="input-group-text">$</span>
+                  </div>
+                  <input type="text" class="form-control" aria-label="Amount (to the nearest dollar)">
+                </div>
+            
+            <div class="input-group w-50 pb-3">
                   <div class="input-group-prepend">
                     <span class="input-group-text">Student's First and last name</span>
                   </div>
                   <input type="text" aria-label="First name" class="form-control">
                   <input type="text" aria-label="Last name" class="form-control">
                 </div>
-            
             <button type="button" class="btn-lg btn-success">Add To Cart</button>
           </div>
       </div>
@@ -135,7 +137,7 @@
  </div>
 
     
-        <div class="d-flex justify-content-between" style="background-color:#306844"> 
+        <div class="footer d-flex justify-content-between" style="background-color:#306844"> 
             <div class="p-3">
                 <div id="footerleft"> <p>980 American Pacific Dr #103 <br> Henderson, NV 89014 <br> Kris Blake --  Owner /Director -- <br> 702-286-7242</p>
                 </div>   
