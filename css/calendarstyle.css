@@ -30,10 +30,6 @@ body {
 }
 
 
-.calendarheader{
-    text-align: center;
-}
-
 .calendarheader a{
     font-family: 'Merriweather', serif;
     text-align: center;
@@ -51,11 +47,20 @@ body {
     margin-top: 0;
 }
 
+.header {
+    padding-bottom: 10px;
+}
+
+.dropdown:hover .dropdown-menu{
+    display: block;
+    margin-top: 0;
+}
+
 
 .nav-item{
     font-family: 'Merriweather', serif;
     font-size: 22px;
-    padding: 5px;
+    padding: 12px;
 }
 
 .dropdown-menu a {
