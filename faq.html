@@ -24,15 +24,53 @@
     <div class="content container-fluid">
        <div style="background-color:whitesmoke;">
 
+        <!-- Button trigger modal -->
+            <div id="signin">
+            <button type="button" class="btn btn-success" data-toggle="modal" data-target="#exampleModal">
+              Sign Up
+            </button>
+            </div>
+
+            <!-- Modal -->
+            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Sign In</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+                  <div class="modal-body">
+                    <form>
+                      <div class="form-group">
+                        <label for="exampleInputEmail1">Email address</label>
+                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                      </div>
+                      <div class="form-group">
+                        <label for="exampleInputPassword1">Password</label>
+                        <input type="password" class="form-control" id="exampleInputPassword1">
+                      </div>
+                      <button type="submit" class="btn btn-success">Submit</button>
+                    </form>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-success">Forgot Password?</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
         <div class="header d-flex justify-content-center align-items-center">
-           <div class="calendarheader"> 
-               <a href="calendar.html"> <img src="images/calendaricon.png" class="img-fluid w-75" alt="Seedling Theatre Calendar"> </a>
-           </div>
           <div class="logo" style="width:1350px;">
               <a href="index.html"><img src="images/Seedling-Theatre-Company-Logo-Optimized.png" class="img-fluid w-75" alt="Seedling Theatre Logo"></a>
             </div>
-    <div class="loginnav img-fluid ">
-        <a href="#"> <img src="images/carticon.png"> </a>
+        <div class="calendarheader img-fluid"> 
+            <a href="calendar.html"> <img src="images/calendaricon.png" class="img-fluid w-75" alt="Seedling Theatre Calendar"> </a>
+        </div>
+    <div class="loginnav img-fluid">
+        <a href="#"> <img src="images/carticon.png" class="img-fluid w-100"> </a>
     </div>
         </div>
                                         
@@ -88,13 +126,13 @@
    
        <div class="d-flex flex-column mb-3">
               <div class="bodytext">
-              <h1>My child really wants to act on the stage/sing in front of an audience/be a star 24/7, but she doesn’t have any real experience or training. Are your programs appropriate for them?</h1>
+              <h1>Q: My child really wants to act on the stage/sing in front of an audience/be a star 24/7, but she doesn’t have any real experience or training. Are your programs appropriate for them?</h1>
               <p>Absolutely. We have one top performing class, our Showcase Cast, which utilizes an audition-only casting process each semester. Other than that, all our programs are designed to bring out the confident performer in each child, regardless of experience or current ability level. We are continually adjusting and re-structuring our classes to address the needs of the students and are dedicated to focusing on the individual development of each child first and foremost.</p>
               
-              <h1>Where will my child’s shows be performed at the end of the semester?</h1>
+              <h1>Q: Where will my child’s shows be performed at the end of the semester?</h1>
               <p>At our studio, the same place we hold classes every week. We have a 125 person audience capacity theater fully equipped with wireless body mics, sound system, stage lighting, and an endless inventory of costumes, props, and sets on hand right there in our 5400sq. ft. warehouse. The students practice every week on the same stage they perform on and we are able to keep production costs down by providing our own venue.</p>
               
-              <h1>I’m concerned that my child will just be sitting around in class doing nothing while the principle characters are rehearsing. How does your company address this issue?</h1>
+              <h1>Q: I’m concerned that my child will just be sitting around in class doing nothing while the principle characters are rehearsing. How does your company address this issue?</h1>
               <p>Whenever any cast is rehearsing for a show there is always going to be times when some cast members are not required to be on stage. That is the nature of the beast but it can be frustrating for parents and students alike. This issue has always been at the top of our priority list in developing our curriculum and classroom structure, and there are many ways we are continually working to minimize wasted class time.<br><br>
 
               Skill building activities and theatre games are utilized each week in addition to show rehearsing.<br><br>
@@ -121,13 +159,10 @@
                     <p><br><br> ©Seedling Theatre Company 2022</p>
                 </div>
             </div>
-        
         <div class="p-3">
                 <div id="socialmedia">
-                <a href="https://twitter.com/seedlingkids"> <img src="images/Twitter%20Logo.png" height="30"> </a>
-                <a href="https://www.facebook.com/seedlingkids00">  <img src="images/Facebook%20logo.png" height="35"></a>
-                <a href="https://www.youtube.com/channel/UCm_e8sYoFn4aXvZOUBjtsIg"><img src="images/Youtube%20Logo.png" height="30"> </a>
-                <a href="https://www.instagram.com/seedlingtheatre/"><img src="images/Instagram%20logo.png" height="40"> </a>
+                <a href="https://www.facebook.com/seedlingkids00" target="_blank">  <img src="images/Facebook%20logo.png" height="35"></a>
+                <a href="https://www.youtube.com/channel/UCm_e8sYoFn4aXvZOUBjtsIg" target="_blank"><img src="images/Youtube%20Logo.png" height="30"> </a>
                 </div>
             <div id="footerright">
                 <a href="#"> <li>Code Of Conduct</li></a>
@@ -137,7 +172,7 @@
         </div>
 
 
-        </div>  
+    </div>  
     </div>
 </div>
 </body>

@@ -1,29 +1,40 @@
-<!DOCTYPE HTML>
-<html lan="en">
-<head>
+<!doctype html>
+<html lang="en">
+  <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="keywords" content="Seedling Theatre, performance, acting, Henderson, Nevada, kids, musicals, singing">
 <meta name="description" content="At Seedling Theatre Company, where kids learn how to perform and sing.">
-
+  
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
 <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF" crossorigin="anonymous"></script>
-
+  
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Merriweather&family=Roboto+Condensed&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="CSSweb/style.css" type="text/css">
+   
+<link href="https://fonts.googleapis.com/css?family=Roboto:300,400&display=swap" rel="stylesheet">
 
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+<link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500&display=swap" rel="stylesheet">
+
+   
+    
+<link rel="stylesheet" href="fonts/icomoon/style.css">
+  
+<link href='fullcalendar/packages/core/main.css' rel='stylesheet' />
+<link href='fullcalendar/packages/daygrid/main.css' rel='stylesheet' />
+    
+    
+<link rel="stylesheet" href="css/bootstrap.min.css">
+    
+<link rel="stylesheet" href="css/calendarstyle.css">
 
 <title>Seedling Theatre Company || Henderson,NV</title>
-
-</head>
-    
+  </head>
 <body>
-    <div class="content container-fluid">
-       <div style="background-color:whitesmoke;">
+
+  <div style="background-color:whitesmoke;">
 
         <!-- Button trigger modal -->
             <div id="signin">
@@ -73,9 +84,7 @@
     <div class="loginnav img-fluid">
         <a href="#"> <img src="images/carticon.png" class="img-fluid w-100"> </a>
     </div>
-        </div>
-            
-                                        
+        </div>  
         
 <nav class="navbar navbar-expand-lg navbar-light mb-3" style="background-color:#306844">
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -121,55 +130,38 @@
     </ul>
   </div>
 </nav>
-   
-    <div class="d-flex flex-column p-5"> 
-      <div class="row justify-content-around">
-       <div class="align-self-center col-lg-3">
-        <img src="images/merchandise.png" class="img-fluid w-100 " alt="classstore">  
-      </div>
-      <div class="storebody col-xl-8">
-          <h1>Merchandise</h1>
-          <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
-          </p>
-            
-        <div class="input-group mb-3">
-          <div class="input-group-prepend">
-          </div>
-          <select class="custom-select" id="designdropdown">
-            <option selected>Design...</option>
-            <option value="1">Priorities $25</option>
-            <option value="2">Drama Queen $25</option>
-            <option value="3">Seedling Logo $25</option>
-          </select>
-        </div>
-             
-        <div class="input-group mb-3">
-          <div class="input-group-prepend">
-          </div>
-          <select class="custom-select" id="sizesdropdown">
-            <option selected>Sizes...</option>
-            <option value="3">Youth XS</option>
-            <option value="3">Youth S</option>
-            <option value="3">Youth M</option>
-            <option value="3">Youth L</option>
-            <option value="3">Youth XL</option>
-          </select>
-        </div>
-             
-              <div class="quantity input-group pb-3">
-              <div class="input-group-prepend">
-                <span class="input-group-text" id="inputGroup-sizing-lg">Quantity:</span>
-              </div>
-              <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-lg">
-            </div>
-            
-            <button type="button" class="btn-lg btn-success">Add To Cart</button>
-          </div>
-      </div>
-    </div>
- </div>
 
+  <div id='calendar-container' class="clearfix">
+    <div id='calendar'></div>
+  </div>
     
+<ul class="impevents p-3">
+  <li class="media">
+    <img src="images/wizardofoz192.png" class="mr-3" alt="musicalcalendar">
+    <div class="media-body">
+      <h5 class="mt-0 mb-1">Wizard Of Oz Musical</h5>
+      <p class="pr-5">After a tornado hurls through Kansas, Dorothy Gale and her dog, Toto, are swept away from their home to the colorful and vibrant Land of Oz. In order to find their way back home, they must embark on a journey to the Emerald City, where the Wizard of Oz resides. On the way, they become accompanied by a Scarecrow who wants a brain, a Tin Man who wants a heart, and a Cowardly Lion who wants courage. They are hopeful that the Wizard will be able to fulfill their wishes, but not far behind them is the Wicked Witch of the West, who is out for revenge on Dorothy after she accidentally killed her sister, the Wicked Witch of the East.</p>
+        <a href="tickets.html"><button type="button" class="calsignup btn-success btn-lg">Buy Tickets</button></a>
+    </div>
+  </li>
+  <li class="media my-4">
+    <img src="images/summercalendarsmall.png" class="mr-3" alt="...">
+    <div class="media-body">
+      <h5 class="mt-0 mb-1">Summer Camp Class</h5>
+      <p class="pr-5">The classic book by L.Frank Baum comes to life on the Seedling stage this summer in a musical based on the 1939 MGM film with music and lyrics by Harold Arlen and E.Y. Harburg. Dorothy, a girl who dreams of a life far away from her Kansas farm, is transported by a tornado  over the rainbow to the magical Land of Oz where she learns the importance of family and home.</p>
+        <a href="registration.html"><button type="button" class="calsignup btn-success btn-lg">Sign Up</button></a>
+    </div>
+  </li>
+  <li class="media">
+    <img src="images/wizardofoz192.png" class="mr-3" alt="...">
+    <div class="media-body">
+      <h5 class="mt-0 mb-1">Wizard Of Oz Class</h5>
+      <p class="pr-5">The classic book by L.Frank Baum comes to life on the Seedling stage this summer in a musical based on the 1939 MGM film with music and lyrics by Harold Arlen and E.Y. Harburg. Dorothy, a girl who dreams of a life far away from her Kansas farm, is transported by a tornado  over the rainbow to the magical Land of Oz where she learns the importance of family and home.</p>
+        <a href="registration.html"><button type="button" class="calsignup btn-success btn-lg">Sign Up</button></a>
+    </div>
+  </li>
+</ul>
+       
         <div class="footer d-flex justify-content-between" style="background-color:#306844"> 
             <div class="p-3">
                 <div id="footerleft"> <p>980 American Pacific Dr #103 <br> Henderson, NV 89014 <br> Kris Blake --  Owner /Director -- <br> 702-286-7242</p>
@@ -191,11 +183,109 @@
                 <a href="#"> <li>Payment And Attendance Policy</li> </a>
             </div>
         </div>
-    
-</div>
-</body>
-    
-    
+
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+
+    <script src='fullcalendar/packages/core/main.js'></script>
+    <script src='fullcalendar/packages/interaction/main.js'></script>
+    <script src='fullcalendar/packages/daygrid/main.js'></script>
+    <script src='fullcalendar/packages/timegrid/main.js'></script>
+    <script src='fullcalendar/packages/list/main.js'></script>
 
     
+
+    <script>
+      document.addEventListener('DOMContentLoaded', function() {
+    var calendarEl = document.getElementById('calendar');
+
+    var calendar = new FullCalendar.Calendar(calendarEl, {
+      plugins: [ 'interaction', 'dayGrid', 'timeGrid', 'list' ],
+      height: 'parent',
+      header: {
+        left: 'dayGridMonth,timeGridWeek,timeGridDay,listWeek',
+        center: 'title',
+        right: 'prev,next today'
+      },
+      defaultView: 'dayGridMonth',
+      defaultDate: '2022-04-01',
+      navLinks: true, // can click day/week names to navigate views
+      editable: true,
+      eventLimit: true, // allow "more" link when too many events
+      events: [
+        {
+          title: 'Wizard of Oz Musical',
+          start: '2022-04-05T17:00:00',
+          url: 'summereventsmay1.html'
+        },
+        {
+          title: 'Summer Camp',
+          start: '2022-04-07T16:00:00',
+          end: '2022-04-10'
+        },
+        {
+          title: 'Summer Camp',
+          start: '2022-04-09T16:00:00'
+        },
+        {
+          title: 'Wizard of Oz Class',
+          start: '2022-04-16T16:00:00'
+        },
+        {
+          title: 'Summer Camp',
+          start: '2022-04-11',
+          end: '2022-04-13',
+          url: 'summereventsmay3.html'
+        },
+        {
+          title: 'Wizard of Oz Class',
+          start: '2022-04-12T10:30:00',
+          end: '2022-04-12T12:30:00',
+          url: 'summereventsmay3.html'
+        },
+        {
+          title: 'Summer Camp',
+          start: '2022-04-12T12:00:00',
+          url: 'summereventsmay3.html'
+        },
+        {
+          title: 'Wizard of Oz Class',
+          start: '2022-04-14T14:30:00',
+          url: 'summereventsmay1.html'
+        },
+        {
+          title: 'Wizard of Oz Class',
+          start: '2022-04-12T17:30:00'
+        },
+        {
+          title: 'Wizard of Oz Musical',
+          start: '2022-02-12T20:00:00'
+        },
+        {
+          title: 'Wizard of Oz Musical',
+          start: '2022-02-13T07:00:00'
+        },
+      ],
+   eventClick: function(event) {
+    if (event.url) {
+      //if you want to open url in the same tab
+      location.href = "calendar.html";
+      //if you want to open url in another window / tab, use the commented code below
+      //window.open(event.url);
+      return false;
+    }
+  }
+    });
+
+    calendar.render();
+  });
+
+    </script>
+
+    <script src="js/main.js"></script>
+           
+
+    </div>
+  </body>
 </html>

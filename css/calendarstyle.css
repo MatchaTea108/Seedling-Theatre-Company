@@ -12,6 +12,13 @@ body {
 
 /*header*/
 
+#signin {
+    text-align: right;
+    padding-top: 20px;
+    padding-right: 20px;
+}
+
+
 .loginnav {
     text-align: right;
 }
@@ -86,8 +93,6 @@ h2 {
 
 #calendar .fc-view-container {
     background-color: #fff;
-    -webkit-box-shadow: 0 15px 30px 0 rgba(0, 0, 0, 0.2);
-    box-shadow: 0 15px 30px 0 rgba(0, 0, 0, 0.2);
 }
   #calendar .fc-toolbar.fc-header-toolbar .fc-center {
     display: block; 
@@ -116,6 +121,18 @@ h2 {
       display: block;
       margin-top: 20px;
       margin-bottom: 20px; } 
+}
+
+.impevents h5{
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 30px;
+}
+
+.impevents p{
+   font-family: 'Merriweather', serif;
+   font-size: 14px;
+   line-height: 25px;
+   color: black;
 }
 
 /*Footer*/

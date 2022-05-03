@@ -25,15 +25,53 @@
     <div class="content container-fluid">
        <div style="background-color:whitesmoke;">
 
+        <!-- Button trigger modal -->
+            <div id="signin">
+            <button type="button" class="btn btn-success" data-toggle="modal" data-target="#exampleModal">
+              Sign Up
+            </button>
+            </div>
+
+            <!-- Modal -->
+            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Sign In</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+                  <div class="modal-body">
+                    <form>
+                      <div class="form-group">
+                        <label for="exampleInputEmail1">Email address</label>
+                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                      </div>
+                      <div class="form-group">
+                        <label for="exampleInputPassword1">Password</label>
+                        <input type="password" class="form-control" id="exampleInputPassword1">
+                      </div>
+                      <button type="submit" class="btn btn-success">Submit</button>
+                    </form>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-success">Forgot Password?</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
         <div class="header d-flex justify-content-center align-items-center">
-           <div class="calendarheader"> 
-               <a href="calendar.html"> <img src="images/calendaricon.png" class="img-fluid w-75" alt="Seedling Theatre Calendar"> </a>
-           </div>
           <div class="logo" style="width:1350px;">
               <a href="index.html"><img src="images/Seedling-Theatre-Company-Logo-Optimized.png" class="img-fluid w-75" alt="Seedling Theatre Logo"></a>
             </div>
-    <div class="loginnav img-fluid ">
-        <a href="#"> <img src="images/carticon.png"> </a>
+        <div class="calendarheader img-fluid"> 
+            <a href="calendar.html"> <img src="images/calendaricon.png" class="img-fluid w-75" alt="Seedling Theatre Calendar"> </a>
+        </div>
+    <div class="loginnav img-fluid">
+        <a href="#"> <img src="images/carticon.png" class="img-fluid w-100"> </a>
     </div>
         </div>
             
@@ -132,10 +170,8 @@
             </div>
         <div class="p-3">
                 <div id="socialmedia">
-                <a href="https://twitter.com/seedlingkids"> <img src="images/Twitter%20Logo.png" height="30"> </a>
-                <a href="https://www.facebook.com/seedlingkids00">  <img src="images/Facebook%20logo.png" height="35"></a>
-                <a href="https://www.youtube.com/channel/UCm_e8sYoFn4aXvZOUBjtsIg"><img src="images/Youtube%20Logo.png" height="30"> </a>
-                <a href="https://www.instagram.com/seedlingtheatre/"><img src="images/Instagram%20logo.png" height="40"> </a>
+                <a href="https://www.facebook.com/seedlingkids00" target="_blank">  <img src="images/Facebook%20logo.png" height="35"></a>
+                <a href="https://www.youtube.com/channel/UCm_e8sYoFn4aXvZOUBjtsIg" target="_blank"><img src="images/Youtube%20Logo.png" height="30"> </a>
                 </div>
             <div id="footerright">
                 <a href="#"> <li>Code Of Conduct</li></a>
@@ -143,7 +179,6 @@
                 <a href="#"> <li>Payment And Attendance Policy</li> </a>
             </div>
         </div>
-    </div>  
     
 </div>
 </body>

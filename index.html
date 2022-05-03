@@ -24,16 +24,54 @@
 <body>
     <div class="content container-fluid">
        <div style="background-color:whitesmoke;">
+        
+        <!-- Button trigger modal -->
+            <div id="signin">
+            <button type="button" class="btn btn-success" data-toggle="modal" data-target="#exampleModal">
+              Sign Up
+            </button>
+            </div>
+
+            <!-- Modal -->
+            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Sign In</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+                  <div class="modal-body">
+                    <form>
+                      <div class="form-group">
+                        <label for="exampleInputEmail1">Email address</label>
+                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                      </div>
+                      <div class="form-group">
+                        <label for="exampleInputPassword1">Password</label>
+                        <input type="password" class="form-control" id="exampleInputPassword1">
+                      </div>
+                      <button type="submit" class="btn btn-success">Submit</button>
+                    </form>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-success">Forgot Password?</button>
+                  </div>
+                </div>
+              </div>
+            </div>
 
         <div class="header d-flex justify-content-center align-items-center">
-           <div class="calendarheader"> 
-               <a href="calendar.html"> <img src="images/calendaricon.png" class="img-fluid w-75" alt="Seedling Theatre Calendar"> </a>
-           </div>
           <div class="logo" style="width:1350px;">
               <a href="index.html"><img src="images/Seedling-Theatre-Company-Logo-Optimized.png" class="img-fluid w-75" alt="Seedling Theatre Logo"></a>
             </div>
-    <div class="loginnav img-fluid ">
-        <a href="#"> <img src="images/carticon.png"> </a>
+        <div class="calendarheader img-fluid"> 
+            <a href="calendar.html"> <img src="images/calendaricon.png" class="img-fluid w-75" alt="Seedling Theatre Calendar"> </a>
+        </div>
+    <div class="loginnav img-fluid">
+        <a href="#"> <img src="images/carticon.png" class="img-fluid w-100"> </a>
     </div>
         </div>
             
@@ -93,7 +131,12 @@
   </ol>
       <div class="carousel-inner">
     <div class="carousel-item active" data-interval="10000">
-         <div class="d-flex justify-content-center">
+    <div class="embed-responsive embed-responsive-16by9" style="width: 59%; height: 45%; margin:auto; display:block;">
+    <iframe src="https://www.youtube.com/embed/3Y0v9u6hHpw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+    </div>
+    <div class="carousel-item" data-interval="10000">
+        <div class="d-flex justify-content-center">
           <img src="images/wizardofoz.png" class="d-block w-50 h-50" alt="wizard of oz Musical">
         </div>
       <div class="carousel-caption d-none d-md-block">
@@ -102,7 +145,7 @@
       </div>
     </div>
     <div class="carousel-item" data-interval="10000">
-      <div class="d-flex justify-content-center">
+            <div class="d-flex justify-content-center">
       <img src="images/seedling-tshirts.png" class="d-block w-50 h-50" alt="Seedling Theatre T-Shirt">
         </div>
       <div class="carousel-caption d-none d-md-block">
@@ -110,7 +153,7 @@
         <p>We have a new line of merch called "Priorities"!</p>
       </div>
     </div>
-    <div class="carousel-item" data-interval="10000">
+      <div class="carousel-item">
      <div class="d-flex justify-content-center">
       <img src="images/review-journal.png" class="d-block w-50 h-50" alt="Las Vegas Review Journal">
         </div>
@@ -118,11 +161,6 @@
         <h5>Check us out on Las Vegas Review Journal!</h5>
         <p>This article talks about our company.</p>
       </div>
-    </div>
-      <div class="carousel-item">
-    <div class="embed-responsive embed-responsive-16by9" style="width: 59%; height: 45%; margin:auto; display:block;">
-    <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/oiKj0Z_Xnjc" ></iframe>
-    </div>
     </div>
       </div>
       <button class="carousel-control-prev" type="button" data-target="#announcements" data-slide="prev">
@@ -143,24 +181,26 @@
             </div>
             <div class="calendar text-center col-md-3">
                 <h1>Summer Classes</h1>
-                <button type="button" class="calendarbtn btn-success btn-lg">Calendar</button>
+                <a href="calendar.html"><button type="button" class="calendarbtn btn-success btn-lg">Calendar</button></a>
             </div>
             <div class="camps text-center col-md-3">
                 <h1>Summer Camps</h1>
-                <button type="button" class="campsbtn btn-success btn-lg">Sign Up</button>
+                <a href="registration.html"><button type="button" class="campsbtn btn-success btn-lg">Sign Up</button></a>
             </div>
         </div>
     </div>
         
        <div class="d-flex flex-column p-3 mb-3">
              <div class="row justify-content-sm-around">
-              <div class="aboutus col-md-4 p-3" style="background-color:#306844; border-radius: 10px;">
+              <div class="aboutus col-md-4 p-3 text-center" style="background-color:#306844; border-radius: 10px;">
               <h1>Who We Are</h1>
-              <p>We are a performing arts studio servicing the Henderson, Southern Las Vegas and Boulder City areas. We offer a variety of courses for kids ages 3 to 18 years. Our studio has a fully equipped theatre (stage, lighting, sound) as well as additional rooms for dance and vocal performance classes.
+                  <p>We are a performing arts studio servicing the Henderson, Southern Las Vegas and Boulder City areas. We offer a variety of courses for kids ages 3 to 18 years. Our studio has a fully equipped theatre (stage, lighting, sound) as well as additional rooms for dance and vocal performance classes. </p>
+            <a href="#"><button type="button" class="aboutbtn btn-success btn-lg">Company Overview</button></a>
              </div>
-              <div class="ourmotto col-md-4 p-3" style="background-color:#306844; border-radius: 10px;">
-            <h1>Our Motto</h1>
+              <div class="ourmotto col-md-4 p-3 text-center" style="background-color:#306844; border-radius: 10px;">
+            <h1>Our Mission</h1>
              <p>Seedling Theatre Company is dedicated to providing an environment where children and teens feel welcome, encouraged, and empowered through participating in the performing arts and where instructors teach with patience and love, striving to develop the potential in every student.</p>
+            <a href="#"><button type="button" class="missionbtn btn-success btn-lg">Reviews</button></a>
            </div>
             </div>
            </div>
@@ -178,10 +218,8 @@
             </div>
         <div class="p-3">
                 <div id="socialmedia">
-                <a href="https://twitter.com/seedlingkids"> <img src="images/Twitter%20Logo.png" height="30"> </a>
-                <a href="https://www.facebook.com/seedlingkids00">  <img src="images/Facebook%20logo.png" height="35"></a>
-                <a href="https://www.youtube.com/channel/UCm_e8sYoFn4aXvZOUBjtsIg"><img src="images/Youtube%20Logo.png" height="30"> </a>
-                <a href="https://www.instagram.com/seedlingtheatre/"><img src="images/Instagram%20logo.png" height="40"> </a>
+                <a href="https://www.facebook.com/seedlingkids00" target="_blank">  <img src="images/Facebook%20logo.png" height="35"></a>
+                <a href="https://www.youtube.com/channel/UCm_e8sYoFn4aXvZOUBjtsIg" target="_blank"><img src="images/Youtube%20Logo.png" height="30"> </a>
                 </div>
             <div id="footerright">
                 <a href="#"> <li>Code Of Conduct</li></a>
